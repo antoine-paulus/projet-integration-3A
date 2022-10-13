@@ -100,8 +100,14 @@ class HC10Robot():
         # If we exited the while loop without returning then we timed out
         return False
         
+    def execute_plan(self, plan):
+        while not self.move_group.execute(plan):
+            continue
+
+
 robot = HC10Robot()
 plan, fraction = robot.load_cartesian_path(SCALE,WAYPOINT_LIST)
-robot.add_box_manually("Potatoes")
-print(robot.check_object_added("Potatoes"))
+# robot.add_box_manually("Potatoes")
+#print(robot.check_object_added("Potatoes"))
 robot.display_trajectory(plan,display_trajectory_publisher)
+robot.execute_plan(plan)
