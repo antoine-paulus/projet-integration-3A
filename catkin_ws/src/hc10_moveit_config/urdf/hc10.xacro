@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<robot name="motoman_hc10" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find hc10_moveit_config)/urdf/hc10_macro.xacro" />
+  <xacro:include filename="$(find hc10_moveit_config)/urdf/hc10.gazebo.xacro"/>
+  <xacro:include filename="$(find hc10_moveit_config)/urdf/hc10.control.xacro"/>
+  <xacro:include filename="$(find hc10_moveit_config)/urdf/kinect_camera.gazebo.xacro"/>
+
+  <xacro:hc10_control arm_id=""/>
+  <xacro:motoman_hc10 prefix=""/>
+  <xacro:hc10_gazebo prefix=""/>
+
+  <link name="camera_depth_frame">
+  </link>
+
+  <joint type="fixed" name="table_camera_joint">
+    <origin xyz="0.15 -1 0.1" rpy="0 0 1.57"/>
+    <child link="camera_depth_frame"/>
+    <parent link="tool0"/>
+    <axis xyz="0 0 0" rpy="0 0 0"/>
+    <limit effort="10000" velocity="1000"/>
+    <dynamics damping="1.0" friction="1.0"/>
+  </joint>
+  <!---->
+  <xacro:kinect prefix=""/>
+</robot>
