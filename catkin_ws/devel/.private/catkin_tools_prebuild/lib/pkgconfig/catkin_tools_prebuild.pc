@@ -1,4 +1,4 @@
-prefix=/home/etudiant/catkin_ws/devel/.private/catkin_tools_prebuild
+prefix=/home/etudiant/Documents/projet-integration-3A/catkin_ws/devel/.private/catkin_tools_prebuild
 
 Name: catkin_tools_prebuild
 Description: Description of catkin_tools_prebuild

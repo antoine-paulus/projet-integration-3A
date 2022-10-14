@@ -1,1 +1,1 @@
-/home/etudiant/catkin_ws/devel/.private/motoman_resources/share/motoman_resources/cmake/motoman_resourcesConfig-version.cmake
+/home/etudiant/Documents/projet-integration-3A/catkin_ws/devel/.private/motoman_resources/share/motoman_resources/cmake/motoman_resourcesConfig-version.cmake

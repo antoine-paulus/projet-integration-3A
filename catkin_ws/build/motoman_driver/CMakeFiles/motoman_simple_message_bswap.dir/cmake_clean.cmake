@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/etudiant/catkin_ws/devel/.private/motoman_driver/lib/libmotoman_simple_message_bswap.pdb"
-  "/home/etudiant/catkin_ws/devel/.private/motoman_driver/lib/libmotoman_simple_message_bswap.so"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/devel/.private/motoman_driver/lib/libmotoman_simple_message_bswap.pdb"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/devel/.private/motoman_driver/lib/libmotoman_simple_message_bswap.so"
   "CMakeFiles/motoman_simple_message_bswap.dir/src/simple_message/messages/motoman_motion_ctrl_message.cpp.o"
   "CMakeFiles/motoman_simple_message_bswap.dir/src/simple_message/messages/motoman_motion_reply_message.cpp.o"
   "CMakeFiles/motoman_simple_message_bswap.dir/src/simple_message/messages/motoman_read_group_io_message.cpp.o"

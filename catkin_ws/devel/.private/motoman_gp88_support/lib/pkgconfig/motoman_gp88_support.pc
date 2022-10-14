@@ -1,4 +1,4 @@
-prefix=/home/etudiant/catkin_ws/devel/.private/motoman_gp88_support
+prefix=/home/etudiant/Documents/projet-integration-3A/catkin_ws/devel/.private/motoman_gp88_support
 
 Name: motoman_gp88_support
 Description: Description of motoman_gp88_support

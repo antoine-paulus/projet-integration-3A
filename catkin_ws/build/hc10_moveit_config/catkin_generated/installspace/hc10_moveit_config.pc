@@ -1,4 +1,4 @@
-prefix=/home/etudiant/catkin_ws/install
+prefix=/home/etudiant/Documents/projet-integration-3A/catkin_ws/install
 
 Name: hc10_moveit_config
 Description: Description of hc10_moveit_config

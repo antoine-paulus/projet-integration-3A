@@ -2,7 +2,7 @@
 
 message(STATUS "motoman_msgs: 5 messages, 8 services")
 
-set(MSG_I_FLAGS "-Imotoman_msgs:/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg;-Iindustrial_msgs:/opt/ros/noetic/share/industrial_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Imotoman_msgs:/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg;-Iindustrial_msgs:/opt/ros/noetic/share/industrial_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,69 +17,69 @@ add_custom_target(motoman_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg" NAME_WE)
 add_custom_target(_motoman_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg" "motoman_msgs/DynamicJointsGroup"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg" "motoman_msgs/DynamicJointsGroup"
 )
 
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg" NAME_WE)
 add_custom_target(_motoman_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg" ""
 )
 
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg" NAME_WE)
 add_custom_target(_motoman_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg" ""
 )
 
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg" NAME_WE)
 add_custom_target(_motoman_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg" "motoman_msgs/DynamicJointsGroup:std_msgs/Header:motoman_msgs/DynamicJointPoint"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg" "motoman_msgs/DynamicJointsGroup:motoman_msgs/DynamicJointPoint:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg" NAME_WE)
 add_custom_target(_motoman_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg" "std_msgs/Header:motoman_msgs/DynamicJointState"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg" "motoman_msgs/DynamicJointState:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv" NAME_WE)
 add_custom_target(_motoman_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv" "std_msgs/Header:industrial_msgs/ServiceReturnCode:motoman_msgs/DynamicJointsGroup:motoman_msgs/DynamicJointPoint:motoman_msgs/DynamicJointTrajectory"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv" "motoman_msgs/DynamicJointTrajectory:industrial_msgs/ServiceReturnCode:motoman_msgs/DynamicJointsGroup:motoman_msgs/DynamicJointPoint:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv" NAME_WE)
 add_custom_target(_motoman_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv" ""
 )
 
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv" NAME_WE)
 add_custom_target(_motoman_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv" ""
 )
 
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv" NAME_WE)
 add_custom_target(_motoman_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv" ""
 )
 
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv" NAME_WE)
 add_custom_target(_motoman_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv" ""
 )
 
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv" NAME_WE)
 add_custom_target(_motoman_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv" ""
 )
 
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv" NAME_WE)
 add_custom_target(_motoman_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv" ""
 )
 
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv" NAME_WE)
 add_custom_target(_motoman_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motoman_msgs" "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv" ""
 )
 
 #
@@ -89,81 +89,81 @@ add_custom_target(_motoman_msgs_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg"
   "${MSG_I_FLAGS}"
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/motoman_msgs
 )
 _generate_msg_cpp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/motoman_msgs
 )
 _generate_msg_cpp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/motoman_msgs
 )
 _generate_msg_cpp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg"
   "${MSG_I_FLAGS}"
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg;/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/motoman_msgs
 )
 _generate_msg_cpp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/motoman_msgs
 )
 
 ### Generating Services
 _generate_srv_cpp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/industrial_msgs/cmake/../msg/ServiceReturnCode.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg;/opt/ros/noetic/share/industrial_msgs/cmake/../msg/ServiceReturnCode.msg;/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg;/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_cpp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/motoman_msgs
-)
-_generate_srv_cpp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_cpp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_cpp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_cpp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_cpp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_cpp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/motoman_msgs
+)
+_generate_srv_cpp(motoman_msgs
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/motoman_msgs
@@ -181,31 +181,31 @@ add_custom_target(motoman_msgs_generate_messages_cpp
 add_dependencies(motoman_msgs_generate_messages motoman_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_cpp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_cpp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_cpp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_cpp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_cpp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_cpp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_cpp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_cpp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_cpp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_cpp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_cpp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_cpp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_cpp _motoman_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -218,81 +218,81 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS motoman_msgs_generate_messages_cpp)
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg"
   "${MSG_I_FLAGS}"
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/motoman_msgs
 )
 _generate_msg_eus(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/motoman_msgs
 )
 _generate_msg_eus(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/motoman_msgs
 )
 _generate_msg_eus(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg"
   "${MSG_I_FLAGS}"
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg;/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/motoman_msgs
 )
 _generate_msg_eus(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/motoman_msgs
 )
 
 ### Generating Services
 _generate_srv_eus(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/industrial_msgs/cmake/../msg/ServiceReturnCode.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg;/opt/ros/noetic/share/industrial_msgs/cmake/../msg/ServiceReturnCode.msg;/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg;/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_eus(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/motoman_msgs
-)
-_generate_srv_eus(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_eus(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_eus(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_eus(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_eus(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_eus(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/motoman_msgs
+)
+_generate_srv_eus(motoman_msgs
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/motoman_msgs
@@ -310,31 +310,31 @@ add_custom_target(motoman_msgs_generate_messages_eus
 add_dependencies(motoman_msgs_generate_messages motoman_msgs_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_eus _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_eus _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_eus _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_eus _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_eus _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_eus _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_eus _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_eus _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_eus _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_eus _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_eus _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_eus _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_eus _motoman_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -347,81 +347,81 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS motoman_msgs_generate_messages_eus)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg"
   "${MSG_I_FLAGS}"
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/motoman_msgs
 )
 _generate_msg_lisp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/motoman_msgs
 )
 _generate_msg_lisp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/motoman_msgs
 )
 _generate_msg_lisp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg"
   "${MSG_I_FLAGS}"
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg;/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/motoman_msgs
 )
 _generate_msg_lisp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/motoman_msgs
 )
 
 ### Generating Services
 _generate_srv_lisp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/industrial_msgs/cmake/../msg/ServiceReturnCode.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg;/opt/ros/noetic/share/industrial_msgs/cmake/../msg/ServiceReturnCode.msg;/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg;/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_lisp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/motoman_msgs
-)
-_generate_srv_lisp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_lisp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_lisp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_lisp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_lisp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_lisp(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/motoman_msgs
+)
+_generate_srv_lisp(motoman_msgs
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/motoman_msgs
@@ -439,31 +439,31 @@ add_custom_target(motoman_msgs_generate_messages_lisp
 add_dependencies(motoman_msgs_generate_messages motoman_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_lisp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_lisp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_lisp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_lisp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_lisp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_lisp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_lisp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_lisp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_lisp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_lisp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_lisp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_lisp _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_lisp _motoman_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -476,81 +476,81 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS motoman_msgs_generate_messages_lisp
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg"
   "${MSG_I_FLAGS}"
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/motoman_msgs
 )
 _generate_msg_nodejs(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/motoman_msgs
 )
 _generate_msg_nodejs(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/motoman_msgs
 )
 _generate_msg_nodejs(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg"
   "${MSG_I_FLAGS}"
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg;/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/motoman_msgs
 )
 _generate_msg_nodejs(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/motoman_msgs
 )
 
 ### Generating Services
 _generate_srv_nodejs(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/industrial_msgs/cmake/../msg/ServiceReturnCode.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg;/opt/ros/noetic/share/industrial_msgs/cmake/../msg/ServiceReturnCode.msg;/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg;/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_nodejs(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/motoman_msgs
-)
-_generate_srv_nodejs(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_nodejs(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_nodejs(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_nodejs(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_nodejs(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_nodejs(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/motoman_msgs
+)
+_generate_srv_nodejs(motoman_msgs
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/motoman_msgs
@@ -568,31 +568,31 @@ add_custom_target(motoman_msgs_generate_messages_nodejs
 add_dependencies(motoman_msgs_generate_messages motoman_msgs_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_nodejs _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_nodejs _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_nodejs _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_nodejs _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_nodejs _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_nodejs _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_nodejs _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_nodejs _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_nodejs _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_nodejs _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_nodejs _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_nodejs _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_nodejs _motoman_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -605,81 +605,81 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS motoman_msgs_generate_messages_node
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg"
   "${MSG_I_FLAGS}"
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/motoman_msgs
 )
 _generate_msg_py(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/motoman_msgs
 )
 _generate_msg_py(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/motoman_msgs
 )
 _generate_msg_py(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg"
   "${MSG_I_FLAGS}"
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg;/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/motoman_msgs
 )
 _generate_msg_py(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/motoman_msgs
 )
 
 ### Generating Services
 _generate_srv_py(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/industrial_msgs/cmake/../msg/ServiceReturnCode.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg;/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg;/opt/ros/noetic/share/industrial_msgs/cmake/../msg/ServiceReturnCode.msg;/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg;/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_py(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/motoman_msgs
-)
-_generate_srv_py(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_py(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_py(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_py(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_py(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/motoman_msgs
 )
 _generate_srv_py(motoman_msgs
-  "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv"
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/motoman_msgs
+)
+_generate_srv_py(motoman_msgs
+  "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/motoman_msgs
@@ -697,31 +697,31 @@ add_custom_target(motoman_msgs_generate_messages_py
 add_dependencies(motoman_msgs_generate_messages motoman_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointPoint.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_py _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointsGroup.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_py _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointState.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_py _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectory.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_py _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/msg/DynamicJointTrajectoryFeedback.msg" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_py _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/CmdJointTrajectoryEx.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_py _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadMRegister.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_py _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadSingleIO.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_py _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/ReadGroupIO.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_py _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/SelectTool.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_py _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteMRegister.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_py _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteSingleIO.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_py _motoman_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/etudiant/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv" NAME_WE)
+get_filename_component(_filename "/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_msgs/srv/WriteGroupIO.srv" NAME_WE)
 add_dependencies(motoman_msgs_generate_messages_py _motoman_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

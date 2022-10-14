@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/etudiant/catkin_ws/devel/.private/motoman_resources:$CMAKE_PREFIX_PATH"
-export PWD='/home/etudiant/catkin_ws/build/motoman_resources'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/etudiant/catkin_ws/devel/.private/motoman_resources/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/etudiant/catkin_ws/src/motoman/motoman_resources:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/etudiant/Documents/projet-integration-3A/catkin_ws/devel/.private/motoman_resources:$CMAKE_PREFIX_PATH"
+export PWD='/home/etudiant/Documents/projet-integration-3A/catkin_ws/build/motoman_resources'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/etudiant/Documents/projet-integration-3A/catkin_ws/devel/.private/motoman_resources/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_resources:$ROS_PACKAGE_PATH"

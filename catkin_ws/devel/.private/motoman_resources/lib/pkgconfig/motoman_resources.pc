@@ -1,4 +1,4 @@
-prefix=/home/etudiant/catkin_ws/devel/.private/motoman_resources
+prefix=/home/etudiant/Documents/projet-integration-3A/catkin_ws/devel/.private/motoman_resources
 
 Name: motoman_resources
 Description: Description of motoman_resources

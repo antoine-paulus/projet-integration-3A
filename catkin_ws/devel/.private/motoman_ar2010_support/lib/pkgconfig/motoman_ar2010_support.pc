@@ -1,4 +1,4 @@
-prefix=/home/etudiant/catkin_ws/devel/.private/motoman_ar2010_support
+prefix=/home/etudiant/Documents/projet-integration-3A/catkin_ws/devel/.private/motoman_ar2010_support
 
 Name: motoman_ar2010_support
 Description: Description of motoman_ar2010_support

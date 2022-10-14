@@ -67,14 +67,14 @@ set(motoman_gp4_support_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(motoman_gp4_support_SOURCE_PREFIX /home/etudiant/catkin_ws/src/motoman/motoman_gp4_support)
-  set(motoman_gp4_support_DEVEL_PREFIX /home/etudiant/catkin_ws/devel/.private/motoman_gp4_support)
+  set(motoman_gp4_support_SOURCE_PREFIX /home/etudiant/Documents/projet-integration-3A/catkin_ws/src/motoman/motoman_gp4_support)
+  set(motoman_gp4_support_DEVEL_PREFIX /home/etudiant/Documents/projet-integration-3A/catkin_ws/devel/.private/motoman_gp4_support)
   set(motoman_gp4_support_INSTALL_PREFIX "")
   set(motoman_gp4_support_PREFIX ${motoman_gp4_support_DEVEL_PREFIX})
 else()
   set(motoman_gp4_support_SOURCE_PREFIX "")
   set(motoman_gp4_support_DEVEL_PREFIX "")
-  set(motoman_gp4_support_INSTALL_PREFIX /home/etudiant/catkin_ws/install)
+  set(motoman_gp4_support_INSTALL_PREFIX /home/etudiant/Documents/projet-integration-3A/catkin_ws/install)
   set(motoman_gp4_support_PREFIX ${motoman_gp4_support_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/etudiant/catkin_ws/install/lib;/home/etudiant/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/etudiant/Documents/projet-integration-3A/catkin_ws/install/lib;/home/etudiant/Documents/projet-integration-3A/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

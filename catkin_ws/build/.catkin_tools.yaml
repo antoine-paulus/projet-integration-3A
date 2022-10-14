@@ -1,6 +1,6 @@
-devel_space: /home/etudiant/catkin_ws/devel
+devel_space: /home/etudiant/Documents/projet-integration-3A/catkin_ws/devel
 install: false
-install_space: /home/etudiant/catkin_ws/install
+install_space: /home/etudiant/Documents/projet-integration-3A/catkin_ws/install
 profile: default
-source_space: /home/etudiant/catkin_ws/src
-workspace: /home/etudiant/catkin_ws
+source_space: /home/etudiant/Documents/projet-integration-3A/catkin_ws/src
+workspace: /home/etudiant/Documents/projet-integration-3A/catkin_ws

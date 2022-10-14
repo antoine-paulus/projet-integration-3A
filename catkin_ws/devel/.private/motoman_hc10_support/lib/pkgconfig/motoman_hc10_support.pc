@@ -1,4 +1,4 @@
-prefix=/home/etudiant/catkin_ws/devel/.private/motoman_hc10_support
+prefix=/home/etudiant/Documents/projet-integration-3A/catkin_ws/devel/.private/motoman_hc10_support
 
 Name: motoman_hc10_support
 Description: Description of motoman_hc10_support

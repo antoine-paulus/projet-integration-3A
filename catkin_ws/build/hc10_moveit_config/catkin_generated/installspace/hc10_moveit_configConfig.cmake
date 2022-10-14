@@ -67,14 +67,14 @@ set(hc10_moveit_config_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(hc10_moveit_config_SOURCE_PREFIX /home/etudiant/catkin_ws/src/hc10_moveit_config)
-  set(hc10_moveit_config_DEVEL_PREFIX /home/etudiant/catkin_ws/devel/.private/hc10_moveit_config)
+  set(hc10_moveit_config_SOURCE_PREFIX /home/etudiant/Documents/projet-integration-3A/catkin_ws/src/hc10_moveit_config)
+  set(hc10_moveit_config_DEVEL_PREFIX /home/etudiant/Documents/projet-integration-3A/catkin_ws/devel/.private/hc10_moveit_config)
   set(hc10_moveit_config_INSTALL_PREFIX "")
   set(hc10_moveit_config_PREFIX ${hc10_moveit_config_DEVEL_PREFIX})
 else()
   set(hc10_moveit_config_SOURCE_PREFIX "")
   set(hc10_moveit_config_DEVEL_PREFIX "")
-  set(hc10_moveit_config_INSTALL_PREFIX /home/etudiant/catkin_ws/install)
+  set(hc10_moveit_config_INSTALL_PREFIX /home/etudiant/Documents/projet-integration-3A/catkin_ws/install)
   set(hc10_moveit_config_PREFIX ${hc10_moveit_config_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/etudiant/catkin_ws/install/lib;/home/etudiant/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/etudiant/Documents/projet-integration-3A/catkin_ws/install/lib;/home/etudiant/Documents/projet-integration-3A/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
