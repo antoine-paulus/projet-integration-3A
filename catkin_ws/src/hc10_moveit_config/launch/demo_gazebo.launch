@@ -6,6 +6,9 @@
   <!-- Gazebo specific options -->
   <arg name="gazebo_gui" default="true"/>
   <arg name="paused" default="false"/>
+  <node pkg="robot" type="robot_state_publisher" name="rob_st_pb" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="kinect_sensor" args="0 0 -0.13 3.14159 0 0 tool0 camera_depth_frame"/>
+  <node pkg="tf2_ros" type="static_transform_publisher" name="kinect_sensor2" args="0 0 0 0 0 0 world base_link"/>
 
   <!-- launch the gazebo simulator and spawn the robot -->
   <include file="$(dirname)/gazebo.launch" >
