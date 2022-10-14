@@ -14,4 +14,8 @@
   <arg name="moveit_sensor_manager" default="motoman_hc10" />
   <include file="$(dirname)/$(arg moveit_sensor_manager)_moveit_sensor_manager.launch.xml" />
 
+  <param name="octomap_frame" type="string" value="camera" />
+  <param name="octomap_resolution" type="double" value="0.05" />
+  <param name="max_range" type="double" value="5.0" />
+
 </launch>
